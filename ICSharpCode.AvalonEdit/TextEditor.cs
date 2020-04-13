@@ -523,6 +523,25 @@ namespace ICSharpCode.AvalonEdit
 		}
 		#endregion
 
+		#region IsLeftScrollBar
+
+		/// <summary>
+		/// Dependency property for <see cref="IsLeftScrollBar"/>
+		/// </summary>
+		public static readonly DependencyProperty IsLeftScrollBarProperty =
+			DependencyProperty.Register("IsLeftScrollBar", typeof(bool), typeof(TextEditor),
+										new FrameworkPropertyMetadata(false));
+
+		/// <summary>
+		/// Gets/Sets the IsLeftScrollBar property.
+		/// </summary>
+		public bool IsLeftScrollBar {
+			get { return (bool)GetValue(IsLeftScrollBarProperty); }
+			set { SetValue(IsLeftScrollBarProperty, value); }
+		}
+
+		#endregion IsLeftScrollBar
+
 		#region TextBoxBase-like methods
 		/// <summary>
 		/// Appends text to the end of the document.
