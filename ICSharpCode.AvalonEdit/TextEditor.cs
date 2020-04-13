@@ -526,14 +526,13 @@ namespace ICSharpCode.AvalonEdit
 		#region IsLeftScrollBar
 
 		/// <summary>
-		/// Dependency property for <see cref="IsLeftScrollBar"/>
+		/// Dependency property of <see cref="IsLeftScrollBar"/>.
 		/// </summary>
 		public static readonly DependencyProperty IsLeftScrollBarProperty =
-			DependencyProperty.Register("IsLeftScrollBar", typeof(bool), typeof(TextEditor),
-										new FrameworkPropertyMetadata(false));
+			DependencyProperty.Register("IsLeftScrollBar", typeof(bool), typeof(TextEditor), new FrameworkPropertyMetadata(false));
 
 		/// <summary>
-		/// Gets/Sets the IsLeftScrollBar property.
+		/// Specifies whether vertical scroll bar will be moved on the left side.
 		/// </summary>
 		public bool IsLeftScrollBar {
 			get { return (bool)GetValue(IsLeftScrollBarProperty); }
