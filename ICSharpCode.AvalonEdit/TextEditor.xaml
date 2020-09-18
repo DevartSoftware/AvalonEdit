@@ -88,8 +88,7 @@
 						              ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=LeftMargins}">
 							<ItemsControl.ItemsPanel>
 								<ItemsPanelTemplate>
-									<!-- Code Compare customization for line numbers margins -->
-									<StackPanel Margin="5,0,0,0" Orientation="Horizontal" />
+									<StackPanel Orientation="Horizontal" />
 								</ItemsPanelTemplate>
 							</ItemsControl.ItemsPanel>
 						</ItemsControl>
