@@ -806,6 +806,28 @@ namespace ICSharpCode.AvalonEdit
 		}
 
 		/// <summary>
+		/// Gets the scrollable width
+		/// </summary>
+		public double ScrollableWidth
+		{
+			get
+			{
+				return scrollViewer != null ? scrollViewer.ScrollableWidth : 0;
+			}
+		}
+
+		/// <summary>
+		/// Gets the scrollable height
+		/// </summary>
+		public double ScrollableHeight
+		{
+			get
+			{
+				return scrollViewer != null ? scrollViewer.ScrollableHeight : 0;
+			}
+		}
+
+		/// <summary>
 		/// Gets the vertical scroll position.
 		/// </summary>
 		public double VerticalOffset {
